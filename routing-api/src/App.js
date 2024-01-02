@@ -1,7 +1,7 @@
 import "./App.css";
 import Albums from "./pages/Albums";
 import Posts from "./pages/Posts";
-import Pagenotfound from "./pages/Pagnotfound";
+import Pagenotfound from "./pages/Pagenotfound";
 import AlbumDetails from "./pages/AlbumDetails";
 import Navigation from "./components/Navigation";
 import { Routes, Route } from "react-router-dom";

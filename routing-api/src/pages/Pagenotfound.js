@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Pagnotfound() {
+function Pagenotfound() {
   return (
     <div>
       <img src="https://cdn.dribbble.com/users/1175431/screenshots/6188233/404-error-dribbble-800x600.gif" alt="image" className='error' />
@@ -8,4 +8,4 @@ function Pagnotfound() {
   )
 }
 
-export default Pagnotfound
+export default Pagenotfound;
