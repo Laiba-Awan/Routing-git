@@ -1,3 +1,19 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .App {
   text-align: center;
+}
+.image {
+  height: 300px;
+}
+.card {
+  cursor: pointer;
+  border-radius: 100px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.error {
+  border-radius: 500px;
+  height: 500px;
 }
