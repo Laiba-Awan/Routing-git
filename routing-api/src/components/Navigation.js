@@ -1,36 +1,46 @@
 import React, { useState } from "react";
-import {Link} from "react-router-dom";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-} from "reactstrap";
+import { Link } from "react-router-dom";
 
-function Navigation(args) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
-
+function Navigation() {
   return (
     <div>
-      <Navbar {...args}>
-        <NavbarBrand href="/">Routing</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="me-auto" navbar>
-            <NavItem>
-              <Link to="/" href ="#">Albums</Link>
-            </NavItem>
-            <NavItem>
-              <Link to="pages/Posts" href ="#">Posts</Link>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Navbar>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid">
+          <Link className="navbar-brand" href="#">
+            Navbar
+          </Link>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <Link
+                  to="/"
+                  className="nav-link active"
+                  aria-current="page"
+                  href="#"
+                >
+                  Album
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="pages/Posts" className="nav-link" href="#">
+                  Posts
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
   );
 }
